@@ -81,7 +81,6 @@ while True:
     continuar = str(input("Gostaria de calcular mais uma nota? [S/n] "))
 
     if(continuar == "n"):
-        print("-" * 48)
         break
 
     print("-" * 48)
@@ -92,4 +91,6 @@ total_alunos = len(aprovados) + len(reprovados)
 aprovados_pcento = (100 / total_alunos) * len(aprovados)
 reprovados_pcento = (100 / total_alunos) * len(reprovados)
 
+print("-" * 58)
 print("{:.2f}% alunos foram APROVADOS e {:.2f}% ficaram REPROVADOS".format(aprovados_pcento, reprovados_pcento))
+print("-" * 58)
